@@ -8,15 +8,17 @@
 		<title>COLOR Challenge</title>
 
 <!-- Links -->
-		<link rel="shortcut icon" href="img/favicon.ico">
+		<!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<!-- Scripts -->
-    <script src="lib/jquery-3.1.1.min.js"></script>
+    <!-- Lodash -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.16.4/lodash.js"></script>
+    
+    
 	</head>
 
   <body>
@@ -26,10 +28,12 @@
         <h2>Challenge: Colors</h2>
         <h3>Choose the color you get by combining this two:</h3>
         
-            <div class="colors">
-                <div class="bouncing-color "></div>
-
-                <div class="bouncing-color-2"></div>                    
+            <div class="container colors">
+                <!-- <div class="bouncing-color "></div>
+                <div class="bouncing-color-2"></div> -->
+                <div class="color-block position-1"></div>
+                <div class="color-block position-2"></div>
+                
             </div>
 
             <div class="options">
@@ -41,6 +45,8 @@
             <div class="extras">
                 <button type="button" class="btn btn-info">Need Help!</button>
                 <h4><span>3</span><span class="glyphicon glyphicon-heart"></span></h4>
+                <div id="counter">1</div>
+                
             </div>
       </section>
         
@@ -53,5 +59,7 @@
   <!-- Scripts -->
         <script src="js/app.js"></script>
         <script src="js/game.js"></script>
+        <script src="js/colors.js"></script>
+        
     </body>
 </html>

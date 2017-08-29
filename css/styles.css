@@ -110,7 +110,8 @@ article {
 
 .colors {
   padding: 10px;
-  margin-top: 60px;
+  margin-top: 40px;
+  position: relative;
 }
 
 .colors-2 {
@@ -158,35 +159,35 @@ article {
   margin-top: 100px;
 }
 
-.red {
+.Red {
   background: #FF0000;  
 }
 
-.blue {
+.Blue {
   background: #0000FF;
 }
 
-.green {
+.Green {
   background: #00FF00;  
 }
 
-.cyan {
+.Cian {
   background: #00FFFF;
 }
 
-.black {
+.Black {
   background: #000000;
 }
 
-.white {
+.White {
   background: #FFFFFF;
 }
 
-.yellow {
+.Yellow {
   background: #FFFF00;
 }
 
-.violet {
+.Violet {
   background: #FF00FF;
 }
 
@@ -471,4 +472,37 @@ footer a{
 .yellow-shutter-in-horizontal:hover:before, .yellow-shutter-in-horizontal:focus:before, .yellow-shutter-in-horizontal:active:before {
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
+}
+
+#counter {
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: #FF0000;
+  font-family: Arial;
+  font-size: 100px;
+  line-height: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -108px;
+  position: absolute;
+  left: 90%;
+  text-align: center;
+  top: 10%;
+  width: 200px;
+}
+
+.color-block {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.position-1 {
+  position: relative;
+  margin-left: 50px;
+}
+
+.position-2 {
+  position: relative;
+  margin-left: 150px;
 }

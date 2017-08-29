@@ -1,15 +1,93 @@
 
-// function loadSounds () {
-//     ion.sound({
-//       sounds: [{name: "snap"}, {name: "tap"}],
-    
-//       path: "../lib/ion.sound-3.0.7/sounds/",
-//       preload: true,
-//       volume: 1.0
-//     });
+// Begin Game
+
+function newGame () {
+    return getColorQuestion(3);
+    // this.userChallengeCounter = 0;    
+}
+
+$(document).ready(function(){
+    $('.play-game').on('click', function(){
+
+});
+var response = newGame();
+console.log(response.question.a.name)
+console.log(response.question.b.name)
+console.log(response);
+
+var color1 = response.question.a.name;
+$('.position-1').addClass(color1);
+var color2 = response.question.b.name;
+$('.position-2').addClass(color2);
+
+
+
+
+
+// Random Colors Question
+// function getRandomColor() {
+//     var letters = '0123456789ABCDEF';
+//     var color = '#';
+//     for (var i = 0; i < 6; i++) {
+//       color += letters[Math.floor(Math.random() * 16)];
+//     }
+//     return color;
 //   }
 
+// function generateHexColor() {
+//     var randomColor = getRandomColor();
+//     $('#hex-color').html(randomColor);
+//     }
+//         generateHexColor();
+});
 
-function newGame ();
 
-function returnMessage();
+// Validate Answer
+
+function validateAnswer () {
+    getColorQuestion.question() = getColorQuestion.answers();
+
+};
+
+function returnMessage(){
+
+};
+
+
+
+// Timer 
+var timeoutID;
+
+function delayedAlert() {
+  timeoutID = window.setTimeout(slowAlert, 300);
+}
+
+function slowAlert() {
+  alert('You are out of time!');
+}
+
+function clearAlert() {
+  window.clearTimeout(timeoutID);
+}
+
+
+// Next Challenge + Counter 
+
+function nextChallenge() {
+    $("#counter").html(this.counter);
+    newGame.userChallengeCounter += 1;
+    
+};
+
+// var count = 0;
+// for(var i = 0; i < array.length; ++i){
+//     if(array[i] == 2)
+//         count++;
+// }
+
+// Life Status
+
+function lifeStatus () {
+
+}
+
