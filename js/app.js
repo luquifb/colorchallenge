@@ -26,7 +26,7 @@ console.log(response.question.answer.name)
 console.log(response);
 
 var colorComb = response.question.answer.name;
-$('.btn').addClass(colorComb);
+$('.btn').addClass(colorComb).text(colorComb);
 
 
 
