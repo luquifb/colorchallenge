@@ -21,6 +21,14 @@ var color2 = response.question.b.name;
 $('.position-2').addClass(color2);
 
 
+var answer = newGame();
+console.log(response.question.answer.name)
+console.log(response);
+
+var colorComb = response.question.answer.name;
+$('.btn').addClass(colorComb);
+
+
 
 
 

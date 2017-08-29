@@ -191,6 +191,10 @@ article {
   background: #FF00FF;
 }
 
+.Orange {
+  background: #FF9900;
+}
+
 .align {
   text-align: center;
 }
@@ -491,7 +495,7 @@ footer a{
   width: 200px;
 }
 
-.color-block {
+.circle {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -499,10 +503,16 @@ footer a{
 
 .position-1 {
   position: relative;
-  margin-left: 50px;
+  left: 35%;
+  top: 80px;
+  margin-left: -35px;
+  margin-top: -50px;
 }
 
 .position-2 {
   position: relative;
-  margin-left: 150px;
+  left: 65%;
+  top: 50px;
+  margin-left: -65px;
+  margin-top: -50px;
 }
