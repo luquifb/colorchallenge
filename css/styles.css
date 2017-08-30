@@ -58,7 +58,7 @@ h4 {
   position: relative;
   list-style-type: none;
   font-size: 30px;
-  margin: 60px 400px;
+  margin: 60px 10px;
   /* border: 2px solid black; */
   padding: 20px 0;
 }
@@ -153,6 +153,7 @@ article {
 .extras {
   display: inline;  
   margin-top: 30px;
+  padding: 25px;
 }
 
 .extras-2 {

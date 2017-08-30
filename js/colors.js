@@ -98,7 +98,7 @@ function colorTable(){
             new Color("Green-Blue",'#00FFFF')
         ), 
         new ColorOperation(
-            new Color("Blue",'#0000FF'),
+            new Color("Blue","#0000FF"),
             new Color("Violet","#FF00FF"),
             "adding (+)",
             new Color("Blue-Violet",'#8A2BE2')
@@ -107,7 +107,7 @@ function colorTable(){
             new Color("Red",'#FF0000'),
             new Color("Violet","#FF00FF"),
             "adding (+)",
-            new Color("Red-Violet",'#C71585')
+            new Color("Red-Violet","#C71585")
         ),                                                     
     ]
 }
