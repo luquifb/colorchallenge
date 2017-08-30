@@ -195,6 +195,31 @@ article {
   background: #FF9900;
 }
 
+.Red-Orange {
+  background: #FF4500;
+}
+
+.Orange-Yellow {
+  background: #FFCC00;
+}
+
+.Green-Yellow {
+  background: #ADFF2F;
+}
+
+.Green-Blue {
+  background: #00FFFF;
+}
+
+.Blue-Violet {
+  background: #8A2BE2;
+}
+
+.Red-Violet {
+  background: #C71585;
+}
+
+
 .align {
   text-align: center;
 }
@@ -515,4 +540,9 @@ footer a{
   top: 50px;
   margin-left: -65px;
   margin-top: -50px;
+}
+
+.operator {
+  /* font-size: 30px; */
+  color: red;
 }

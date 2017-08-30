@@ -26,10 +26,12 @@ console.log(response.question.answer.name)
 console.log(response);
 
 var colorComb = response.question.answer.name;
-$('.btn').addClass(colorComb).text(colorComb);
+$('.option1').addClass(colorComb).text(colorComb);
 
 
-
+var operator = newGame();
+var colorOperator = response.question.op;
+$('.operator').addClass(colorOperator).text(colorOperator);
 
 
 // Random Colors Question
