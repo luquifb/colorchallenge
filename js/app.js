@@ -105,6 +105,7 @@ function colorPositions() {
     }
 
 
+
 // Timer 
 
 var startTimer = function(){
