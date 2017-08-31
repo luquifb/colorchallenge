@@ -53,16 +53,11 @@ var colorOperator = response.question.op;
 // Validate Answer
 
 $('#options').on('click', function(e){
-    var button = $('button').hasClass('correct');
-
-    if (e.target = true){
+    if ($(e.target).hasClass('correct') == true) {
         window.location.href = 'game.html';
         console.log(button);
     } else {
-        // return alert("You loose!");
-        window.location.href = 'game-over.html';
-        console.log(button);        
-        
+        window.location.href = 'game-over.html';   
     }
 });
 
