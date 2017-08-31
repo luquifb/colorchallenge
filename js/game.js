@@ -1,7 +1,7 @@
     
-function getRandomColors () {
-    var randomColor = '#'+ ('000000' + Math.floor(Math.random()*16777215).toString(16)).slice(-6);
-};
+// function getRandomColors () {
+//     var randomColor = '#'+ ('000000' + Math.floor(Math.random()*16777215).toString(16)).slice(-6);
+// };
 
   
 //   function setRandomColor() {
@@ -19,32 +19,32 @@ function getRandomColors () {
 
 
 // Balls changing colors random
-window.setInterval(function(){
+// window.setInterval(function(){
     
-        var randomColor = '#'+ ('000000' + Math.floor(Math.random()*16777215).toString(16)).slice(-6);
+//         var randomColor = '#'+ ('000000' + Math.floor(Math.random()*16777215).toString(16)).slice(-6);
         
-        $('.border').css({
-          'background-color' : randomColor,
-        });
+//         $('.border').css({
+//           'background-color' : randomColor,
+//         });
     
-      }, 500);
+//       }, 500);
 
-      window.setInterval(function(){
+//       window.setInterval(function(){
         
-            var randomColor = '#'+ ('000000' + Math.floor(Math.random()*16777215).toString(16)).slice(-6);
+//             var randomColor = '#'+ ('000000' + Math.floor(Math.random()*16777215).toString(16)).slice(-6);
             
-            $('.border2').css({
-              'background-color' : randomColor,
-            });
+//             $('.border2').css({
+//               'background-color' : randomColor,
+//             });
         
-          }, 500);      
+//           }, 500);      
 
-     window.setInterval(function(){
+//      window.setInterval(function(){
             
-          var randomColor = '#'+ ('000000' + Math.floor(Math.random()*16777215).toString(16)).slice(-6);
+//           var randomColor = '#'+ ('000000' + Math.floor(Math.random()*16777215).toString(16)).slice(-6);
           
-          $('.border3').css({
-            'background-color' : randomColor,
-          });
+//           $('.border3').css({
+//             'background-color' : randomColor,
+//           });
       
-        }, 500);  
+//         }, 500);  
