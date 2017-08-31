@@ -41,8 +41,6 @@ var answer = newGame();
 var colorComb = response.question.answer.name;
 var colorOptions = response.question.answers;
     $('.option1').addClass(colorComb).addClass('correct').text(colorComb);
-    // $('.option').addClass(colorOptions);
-
 
 
 // Print operator in question
@@ -53,20 +51,37 @@ var colorOperator = response.question.op;
     
 
 // Validate Answer
-function validateAnswer () {
-    $('button').on('click', function(){
-        if (this.e === '.correct') {
-            return newGame ();
-        } else {
-            window.location.href = 'game-over.html';
-        }
-        console.log("hago click");  
-    });
-    
-};
 
+$('#options').on('click', function(e){
+    var button = $('button').hasClass('correct');
 
+    if (e.target = true){
+        window.location.href = 'game.html';
+        console.log(button);
+    } else {
+        // return alert("You loose!");
+        window.location.href = 'game-over.html';
+        console.log(button);        
+        
+    }
 });
+
+
+// Timer 
+
+var startTimer = function(){
+    timer = setInterval(function(){
+        timePassed += 1000;
+        var minutes = Math.floor(timePassed/(1000*60));
+        var seconds = (timePassed/1000)%60;
+        if(seconds < 10) {
+            var timeDisplay = minutes + ":0" + seconds;
+        } else {
+            var timeDisplay = minutes + ":" + seconds;
+        }
+        $("#timer").text(timeDisplay);
+    },1000);
+}
 
 
 // Random Colors Option
@@ -79,44 +94,37 @@ function getRandomColor() {
     return color;
   }
 
+  function getRandomColors() {
+    var letters = '0F0F0F';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 2)];
+    }
+    return color;
+  }
+
 function generateHexColor() {
     var randomColor = getRandomColor();
+    var randomColors = getRandomColors();
     $('.option2').html(randomColor);
+    $('.option3').html(randomColors);
     }
         generateHexColor();
 
 
+// functions colorPositions() { 
+//     var position1 = colorComb;
+//     var position2 = randomColor;
+//     var position3 = randomColors;
+
+//      return _.shuffle(colorPositions);
+//     }
 
 
-
-
-// Validate Answer
-
-// function validateAnswer () {
-//     getColorQuestion.question() = getColorQuestion.answers();
-
-// };
 
 // function returnMessage(){
 
 // };
-
-
-
-// // Timer 
-// var timeoutID;
-
-// function delayedAlert() {
-//   timeoutID = window.setTimeout(slowAlert, 300);
-// }
-
-// function slowAlert() {
-//   alert('You are out of time!');
-// }
-
-// function clearAlert() {
-//   window.clearTimeout(timeoutID);
-// }
 
 
 // // Next Challenge + Counter 
@@ -139,3 +147,5 @@ function generateHexColor() {
 
 // }
 
+
+});
