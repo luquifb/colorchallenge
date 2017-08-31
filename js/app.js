@@ -40,7 +40,7 @@ var answer = newGame();
 
 var colorComb = response.question.answer.name;
 var colorOptions = response.question.answers;
-    $('.option1').addClass(colorComb).addClass('correct').text(colorComb);
+    $('.option1').addClass('correct').text(colorComb);
 
 
 // Print operator in question
@@ -61,6 +61,49 @@ $('#options').on('click', function(e){
     }
 });
 
+// Ask for help
+$('.btn-info').on('click', function(){
+    return alert("I'm sorry, try harder!!")
+});
+
+
+// Random Colors Option
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+
+  function getRandomColors() {
+    var letters = '0F';
+    var color = '#';
+    for (var i = 0; i < 3; i++) {
+      color += letters[Math.floor(Math.random() * 2)];
+    }
+    return color;
+  }
+
+function generateHexColor() {
+    var randomColor = getRandomColor();
+    var randomColors = getRandomColors();
+        $('.option2').html(randomColor);
+        $('.option3').html(randomColors);
+    }
+        generateHexColor();
+
+
+function colorPositions() { 
+    var position1 = colorComb;
+    var position2 = randomColor;
+    var position3 = randomColors;
+    var position = {position1, position2, position3};
+
+     return colorPositions(position);
+    }
+
 
 // Timer 
 
@@ -78,57 +121,12 @@ var startTimer = function(){
     },1000);
 }
 
-
-// Random Colors Option
-function getRandomColor() {
-    var letters = '0123456789ABCDEF';
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-  }
-
-  function getRandomColors() {
-    var letters = '0F0F0F';
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 2)];
-    }
-    return color;
-  }
-
-function generateHexColor() {
-    var randomColor = getRandomColor();
-    var randomColors = getRandomColors();
-    $('.option2').html(randomColor);
-    $('.option3').html(randomColors);
-    }
-        generateHexColor();
-
-
-// functions colorPositions() { 
-//     var position1 = colorComb;
-//     var position2 = randomColor;
-//     var position3 = randomColors;
-
-//      return _.shuffle(colorPositions);
-//     }
-
-
-
 // function returnMessage(){
 
 // };
 
 
-// // Next Challenge + Counter 
-
-// function nextChallenge() {
-//     $("#counter").html(this.counter);
-//     newGame.userChallengeCounter += 1;
-    
-// };
+// Counter 
 
 // // var count = 0;
 // // for(var i = 0; i < array.length; ++i){

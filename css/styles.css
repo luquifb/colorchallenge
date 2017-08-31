@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
 
-/* body {
-  position: absolute;
-  margin: 100px 400px;
-  font-family: 'Roboto', sans-serif;
-  padding: 50px;
-} */
-
 body {
   font-family: sans-serif;
   text-transform: uppercase;
@@ -20,9 +13,6 @@ body {
 h1 {
   font-size: 60px;
   text-align: center;
-  /* border: 5px solid black;
-  padding: 20px;
-  color: #FFF; */
 }
 
 h2 {
@@ -40,26 +30,11 @@ h4 {
   margin-top: 40px;
 }
 
-/* .container {
-  position: relative;
-  display: inline-block;
-} */
-
-/* #container-color {
-  text-align: center;
-  color: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bolder;
-  text-transform: uppercase;
-  transition: 1s;
-} */
-
 .list {
   position: relative;
   list-style-type: none;
   font-size: 30px;
   margin: 60px 10px;
-  /* border: 2px solid black; */
   padding: 20px 0;
 }
 
@@ -87,7 +62,6 @@ h4 {
 
 .list > a {
   color: #FFF;
-  
 }
 
 .rule {
@@ -130,12 +104,6 @@ article {
   padding: 5px;
 }
 
-/* .btn-2 {
-  border-radius: 50%;
-  width: 125px;
-  padding: 5px;
-} */
-
 .circle {
   border-radius: 50%;
   width: 125px;
@@ -153,7 +121,6 @@ article {
 .extras {
   display: inline;  
   margin-top: 30px;
-  padding: 25px;
 }
 
 .extras-2 {
@@ -212,6 +179,10 @@ article {
   background: #00FFFF;
 }
 
+.color-span {
+  color: #31b0d5;
+}
+
 .Blue-Violet {
   background: #8A2BE2;
 }
@@ -219,7 +190,6 @@ article {
 .Red-Violet {
   background: #C71585;
 }
-
 
 .align {
   text-align: center;
@@ -525,6 +495,7 @@ footer a{
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  border: 4px solid black;
 }
 
 .position-1 {
@@ -544,7 +515,6 @@ footer a{
 }
 
 .operator {
-  /* font-size: 30px; */
   color: red;
 }
 
