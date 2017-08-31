@@ -131,12 +131,24 @@ article {
   background: #FF0000;  
 }
 
+.red {
+  color: #FF0000;
+}
+
 .Blue {
   background: #0000FF;
 }
 
+.blue {
+  color: #0000FF;
+}
+
 .Green {
   background: #00FF00;  
+}
+
+.green {
+  color: #00FF00;
 }
 
 .Cian {
