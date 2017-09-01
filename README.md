@@ -1,4 +1,4 @@
-###Welcome to COLOR Challenge!
+#Welcome to COLOR Challenge!
 
 COLOR Challenge is a educative game for everybody who wants to challenge themselves and learn the compositions of the colors.
 
@@ -7,7 +7,7 @@ This game was created as a project in Ironhack Web Development Bootcamp in Madri
 Visit https://luquifb.github.io/colorchallenge/ to play the game.
 
 
-###Documentation / Table of contents
+##Documentation / Table of contents
 
 The following code structure is divided intro the following different files:
 HTML files: 
@@ -27,11 +27,11 @@ Img and Lib folders: 
 - for sounds and images included in the game
 
 
-###Technologies used
+##Technologies used
 * HTML, CSS, Javascript, Github & jQuery.
 
 
-###Setup
+##Setup
 
 If you’d like to view my project in your browser:
 
