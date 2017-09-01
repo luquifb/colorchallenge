@@ -40,20 +40,46 @@ var color2 = response.question.b.name;
 
 var result = Math.floor(Math.random()*3)+1;
 var colorComb = response.question.answer.name;
+var colorRandom = response.question.a.name;
+var colorRandom2 = response.question.b.name;
 var option = $('.option'+result).addClass('correct').text(colorComb);
 
     if ($('.option1').text() == 'Option'){
-        $('.option1').addClass('correct').text('cuak')
+        $('.option1').text(colorRandom)
     }
     if ($('.option2').text() == 'Option'){
-        $('.option2').addClass('correct').text('trash')
+        $('.option2').text(colorRandom2)
     }
     if ($('.option3').text() == 'Option'){
-        $('.option3').addClass('correct').text('guau')
+        $('.option3').text(getRandomColors)
     }
 
+// Random Colors Option
+function getRandomColors() {
+    var letters = '0F';
+    var color = '#';
+    for (var i = 0; i < 3; i++) {
+      color += letters[Math.floor(Math.random() * 2)];
+    }
+    return color;
+  }
 
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
 
+function generateHexColor() {
+    var randomColor = getRandomColor();
+    var randomColors = getRandomColors();
+        $('.option2').html(randomColor);
+        $('.option3').html(randomColors);
+    }
+        generateHexColor();
    
 
 
@@ -92,44 +118,6 @@ $('.btn-info').on('click', function(){
 });
 
 
-// Random Colors Option
-// function getRandomColor() {
-//     var letters = '0123456789ABCDEF';
-//     var color = '#';
-//     for (var i = 0; i < 6; i++) {
-//       color += letters[Math.floor(Math.random() * 16)];
-//     }
-//     return color;
-//   }
-
-//   function getRandomColors() {
-//     var letters = '0F';
-//     var color = '#';
-//     for (var i = 0; i < 3; i++) {
-//       color += letters[Math.floor(Math.random() * 2)];
-//     }
-//     return color;
-//   }
-
-// function generateHexColor() {
-//     var randomColor = getRandomColor();
-//     var randomColors = getRandomColors();
-//         $('.option2').html(randomColor);
-//         $('.option3').html(randomColors);
-//     }
-//         generateHexColor();
-
-
-// function colorPositions() { 
-//     var position1 = colorComb;
-//     var position2 = randomColor;
-//     var position3 = randomColors;
-//     var position = {position1, position2, position3};
-
-//      return colorPositions(position);
-//     }
-
-
 
 // Timer 
 
@@ -159,11 +147,6 @@ $('.btn-info').on('click', function(){
 // //         count++;
 // // }
 
-// // Life Status
-
-// function lifeStatus () {
-
-// }
 
 
 });
@@ -181,3 +164,35 @@ $('.btn-info').on('click', function(){
     //         console.log('has hecho click en la opción ' + option);
     //     })
     // }
+
+
+    // Balls changing colors random
+        window.setInterval(function(){
+            
+                var randomColor = '#'+ ('000000' + Math.floor(Math.random()*16777215).toString(16)).slice(-6);
+                
+                $('.border').css({
+                'background-color' : randomColor,
+                });
+            
+            }, 500);
+
+      window.setInterval(function(){
+        
+            var randomColor = '#'+ ('000000' + Math.floor(Math.random()*16777215).toString(16)).slice(-6);
+            
+            $('.border2').css({
+              'background-color' : randomColor,
+            });
+        
+          }, 500);      
+
+     window.setInterval(function(){
+            
+          var randomColor = '#'+ ('000000' + Math.floor(Math.random()*16777215).toString(16)).slice(-6);
+          
+          $('.border3').css({
+            'background-color' : randomColor,
+          });
+      
+        }, 500);  
