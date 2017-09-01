@@ -30,6 +30,7 @@ Img and Lib folders: 
 
 
 ##Technologies used
+
 *HTML, CSS, Javascript, Github & jQuery.*
 
 
