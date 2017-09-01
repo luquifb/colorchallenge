@@ -6,20 +6,22 @@ This game was created as a project in Ironhack Web Development Bootcamp in Madri
 
 Visit https://luquifb.github.io/colorchallenge/ to play the game.
 
+---
 
 ##Documentation / Table of contents
 
 The following code structure is divided intro the following different files:
-HTML files: 
+
+**HTML** files: 
 - Index.html 
 - game.html 
 - game-over.html
 
-CSS files: 
+**CSS** files: 
 - styles.css 
 - bootstrap folder
 
-JS files: 
+**JS** files: 
 - app.js 
 - colors.js
 
@@ -28,7 +30,7 @@ Img and Lib folders: 
 
 
 ##Technologies used
-* HTML, CSS, Javascript, Github & jQuery.
+*HTML, CSS, Javascript, Github & jQuery.*
 
 
 ##Setup
