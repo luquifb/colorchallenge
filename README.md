@@ -43,3 +43,4 @@ If you’d like to view my project in your browser:
 3- open index.html
 
 
+Any contribution is welcome, just let me know!
