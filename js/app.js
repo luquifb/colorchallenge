@@ -94,7 +94,7 @@ $('#options').on('click', function(e){
 // Ask for help
 
 $('.btn-info').on('click', function(){
-    return alert("I'm sorry, try harder!!")
+    return alert("A hexadecimal is a color specified with: #RRGGBB.\n\nRR (red), GG (green) and BB (blue) are hexadecimal integers between 00 and FF specifying the intensity of the color.\n\nFor example, #0000FF is displayed as blue, because the blue component is set to its highest value (FF) and the others are set to 00.")
 });
 
 
