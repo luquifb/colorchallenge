@@ -4,7 +4,7 @@ COLOR Challenge is a educative game for everybody who wants to challenge themsel
 
 This game was created as a project in Ironhack Web Development Bootcamp in Madrid 2017.
 
-Visit https://luquifb.github.io/colorchallenge/ to play the game.
+Visit https://luquifb.github.io/colorchallenge to play the game.
 
 ---
 
